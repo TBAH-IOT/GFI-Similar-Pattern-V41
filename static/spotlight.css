@@ -1,0 +1,13 @@
+/* V41 is an optional visual experiment. Earlier forecast views are untouched. */
+html[data-forecast-view="41"] .pattern-timeline { row-gap:6px; }
+html[data-forecast-view="41"] .pattern-navigation { border-color:#65583a; }
+html[data-forecast-view="41"] .pattern-current { color:#f0d37c; }
+html[data-forecast-view="41"] .forecast-horizon-note { display:none!important; }
+html[data-forecast-view="41"] .forecast-layer-toggles { display:grid;grid-template-columns:1fr; }
+html[data-forecast-view="41"] :is(#forecast-candle-toggle,#forecast-scenario-toggles) { display:none!important; }
+html[data-forecast-view="41"] :is(#forecast-overlay,.forecast-label,.forecast-price-tag,.forecast-axis-dot,#forecast-entry-line,#forecast-origin-dot,#forecast-origin-line) { display:none!important; }
+html[data-forecast-view="41"] .forecast-layer-toggle[aria-pressed="true"] { border-color:#5e7968; }
+html[data-forecast-view="41"] .spotlight-focus { padding:5px 8px; border:1px solid #5e6547; border-radius:4px; color:#e7d48b; background:#22251b; font-size:9px; white-space:nowrap; }
+html[data-forecast-view="41"] .spotlight-focus:hover { border-color:#c1a96a; background:#303222; }
+html[data-forecast-view="41"] .spotlight-focus[aria-pressed="true"] { color:#101b17; background:#9edbbd; border-color:#9edbbd; }
+html[data-forecast-view="41"] .spotlight-focus[hidden] { display:none; }

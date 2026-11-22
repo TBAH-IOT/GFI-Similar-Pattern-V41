@@ -1,0 +1,628 @@
+{
+  "passed": true,
+  "old_bug_reproduced": true,
+  "new_identities_equal": true,
+  "numpy_versions": [
+    "2.2.6",
+    "2.3.3"
+  ],
+  "profiles": [
+    {
+      "kind": "old",
+      "shift": -1,
+      "numpy": "2.2.6",
+      "catalog": "c5ee038c51dd4985e1a8ff51f27fd75ed7743d537b8e5782db51cbeece6a048c",
+      "strategy": "6abc0134001c48b83e5574c7f03cbc4283722adec0c9dd46bb91e5c42397220c",
+      "model": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+      "rounding": {
+        "Rounding_Bottom": [
+          "0x1.0000000000000p+0",
+          "0x1.2bec333018868p-2",
+          "0x0.0p+0",
+          "0x1.2bec333018868p-2",
+          "0x1.0000000000000p+0"
+        ],
+        "Rounding_Top": [
+          "0x0.0p+0",
+          "0x1.6a09e667f3bccp-1",
+          "0x1.0000000000000p+0",
+          "0x1.6a09e667f3bccp-1",
+          "0x0.0p+0"
+        ]
+      }
+    },
+    {
+      "kind": "old",
+      "shift": 0,
+      "numpy": "2.2.6",
+      "catalog": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "model": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+      "rounding": {
+        "Rounding_Bottom": [
+          "0x1.0000000000000p+0",
+          "0x1.2bec333018866p-2",
+          "0x0.0p+0",
+          "0x1.2bec333018866p-2",
+          "0x1.0000000000000p+0"
+        ],
+        "Rounding_Top": [
+          "0x0.0p+0",
+          "0x1.6a09e667f3bcdp-1",
+          "0x1.0000000000000p+0",
+          "0x1.6a09e667f3bcdp-1",
+          "0x0.0p+0"
+        ]
+      }
+    },
+    {
+      "kind": "old",
+      "shift": 1,
+      "numpy": "2.2.6",
+      "catalog": "826187a36c96611d2f153e1c291ee79d5064cbe4985c6bf428c7f9b966e2385d",
+      "strategy": "837e90b6833507e31ca342e5252147f25acef700477aa10a7e602d3989c3448f",
+      "model": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+      "rounding": {
+        "Rounding_Bottom": [
+          "0x1.0000000000000p+0",
+          "0x1.2bec333018864p-2",
+          "0x0.0p+0",
+          "0x1.2bec333018864p-2",
+          "0x1.0000000000000p+0"
+        ],
+        "Rounding_Top": [
+          "0x0.0p+0",
+          "0x1.6a09e667f3bcep-1",
+          "0x1.0000000000000p+0",
+          "0x1.6a09e667f3bcep-1",
+          "0x0.0p+0"
+        ]
+      }
+    },
+    {
+      "kind": "new",
+      "shift": -1,
+      "passed": true,
+      "test_sine_ulp": -1,
+      "test_forbid_sine": false,
+      "python": "3.13.7",
+      "numpy": "2.2.6",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "shift": 0,
+      "passed": true,
+      "test_sine_ulp": 0,
+      "test_forbid_sine": false,
+      "python": "3.13.7",
+      "numpy": "2.2.6",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "shift": 1,
+      "passed": true,
+      "test_sine_ulp": 1,
+      "test_forbid_sine": false,
+      "python": "3.13.7",
+      "numpy": "2.2.6",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "shift": "forbidden",
+      "passed": true,
+      "test_sine_ulp": 0,
+      "test_forbid_sine": true,
+      "python": "3.13.7",
+      "numpy": "2.2.6",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "old",
+      "shift": -1,
+      "numpy": "2.3.3",
+      "catalog": "c5ee038c51dd4985e1a8ff51f27fd75ed7743d537b8e5782db51cbeece6a048c",
+      "strategy": "6abc0134001c48b83e5574c7f03cbc4283722adec0c9dd46bb91e5c42397220c",
+      "model": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+      "rounding": {
+        "Rounding_Bottom": [
+          "0x1.0000000000000p+0",
+          "0x1.2bec333018868p-2",
+          "0x0.0p+0",
+          "0x1.2bec333018868p-2",
+          "0x1.0000000000000p+0"
+        ],
+        "Rounding_Top": [
+          "0x0.0p+0",
+          "0x1.6a09e667f3bccp-1",
+          "0x1.0000000000000p+0",
+          "0x1.6a09e667f3bccp-1",
+          "0x0.0p+0"
+        ]
+      }
+    },
+    {
+      "kind": "old",
+      "shift": 0,
+      "numpy": "2.3.3",
+      "catalog": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "model": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+      "rounding": {
+        "Rounding_Bottom": [
+          "0x1.0000000000000p+0",
+          "0x1.2bec333018866p-2",
+          "0x0.0p+0",
+          "0x1.2bec333018866p-2",
+          "0x1.0000000000000p+0"
+        ],
+        "Rounding_Top": [
+          "0x0.0p+0",
+          "0x1.6a09e667f3bcdp-1",
+          "0x1.0000000000000p+0",
+          "0x1.6a09e667f3bcdp-1",
+          "0x0.0p+0"
+        ]
+      }
+    },
+    {
+      "kind": "old",
+      "shift": 1,
+      "numpy": "2.3.3",
+      "catalog": "826187a36c96611d2f153e1c291ee79d5064cbe4985c6bf428c7f9b966e2385d",
+      "strategy": "837e90b6833507e31ca342e5252147f25acef700477aa10a7e602d3989c3448f",
+      "model": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+      "rounding": {
+        "Rounding_Bottom": [
+          "0x1.0000000000000p+0",
+          "0x1.2bec333018864p-2",
+          "0x0.0p+0",
+          "0x1.2bec333018864p-2",
+          "0x1.0000000000000p+0"
+        ],
+        "Rounding_Top": [
+          "0x0.0p+0",
+          "0x1.6a09e667f3bcep-1",
+          "0x1.0000000000000p+0",
+          "0x1.6a09e667f3bcep-1",
+          "0x0.0p+0"
+        ]
+      }
+    },
+    {
+      "kind": "new",
+      "shift": -1,
+      "passed": true,
+      "test_sine_ulp": -1,
+      "test_forbid_sine": false,
+      "python": "3.13.7",
+      "numpy": "2.3.3",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "shift": 0,
+      "passed": true,
+      "test_sine_ulp": 0,
+      "test_forbid_sine": false,
+      "python": "3.13.7",
+      "numpy": "2.3.3",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "shift": 1,
+      "passed": true,
+      "test_sine_ulp": 1,
+      "test_forbid_sine": false,
+      "python": "3.13.7",
+      "numpy": "2.3.3",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "shift": "forbidden",
+      "passed": true,
+      "test_sine_ulp": 0,
+      "test_forbid_sine": true,
+      "python": "3.13.7",
+      "numpy": "2.3.3",
+      "prototype_schema": "gfi-price-prototypes-binary64-v1",
+      "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+      "catalog_hash": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+      "strategy_hash": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+      "patterns": 78,
+      "matrices": {
+        "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+        "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+        "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+        "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+        "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+      },
+      "registry_markets": [
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "15m",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "1h",
+          "models": 308,
+          "passed": true
+        },
+        {
+          "symbol": "SOLUSDT",
+          "timeframe": "4h",
+          "models": 308,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "real_linux_container_executed": false
+}

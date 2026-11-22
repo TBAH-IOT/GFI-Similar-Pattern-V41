@@ -1,0 +1,127 @@
+{
+  "symbol": "BTCUSDT",
+  "frozen": true,
+  "source_commit": "a502cc2ccc1df17bf5385ea294381718f814b3ce",
+  "source_sha256": "9027f8432625232d3f7aaa6443bfba0f5da2a9b11c55011082d40b4ff37b03c8",
+  "accuracy_source": "original BTC configuration; not recalculated",
+  "profiles": [
+    {
+      "timeframe": "1h",
+      "method": "EMA Peaks",
+      "patterns": {
+        "Diamond_Top": {
+          "win_rate": 0.559,
+          "direction_override": "Up",
+          "sim_threshold": null
+        },
+        "Triangle_Ascending": {
+          "win_rate": 0.6129,
+          "direction_override": null,
+          "sim_threshold": null
+        }
+      }
+    },
+    {
+      "timeframe": "1h",
+      "method": "Pivot Window",
+      "patterns": {
+        "Diamond_Top": {
+          "win_rate": 0.5763,
+          "direction_override": "Up",
+          "sim_threshold": null
+        },
+        "Broadening_Bottom": {
+          "win_rate": 0.5554,
+          "direction_override": "Momentum",
+          "sim_threshold": null
+        }
+      }
+    },
+    {
+      "timeframe": "1h",
+      "method": "ZigZag Limit",
+      "patterns": {
+        "Triple_Top_Wide": {
+          "win_rate": 0.6037,
+          "direction_override": null,
+          "sim_threshold": null
+        }
+      }
+    },
+    {
+      "timeframe": "15m",
+      "method": "ZigZag Limit",
+      "patterns": {
+        "Wedge_Falling": {
+          "win_rate": 0.5688,
+          "direction_override": null,
+          "sim_threshold": null
+        },
+        "Triple_Bottom_Wide": {
+          "win_rate": 0.6234,
+          "direction_override": null,
+          "sim_threshold": null
+        },
+        "Cup_and_Handle": {
+          "win_rate": 0.5698,
+          "direction_override": "Down",
+          "sim_threshold": null
+        },
+        "Double_Bottom": {
+          "win_rate": 0.5603,
+          "direction_override": "Down",
+          "sim_threshold": null
+        },
+        "Triple_Top": {
+          "win_rate": 0.5849,
+          "direction_override": null,
+          "sim_threshold": null
+        },
+        "Head_and_Shoulders_Top": {
+          "win_rate": 0.5575,
+          "direction_override": null,
+          "sim_threshold": null
+        },
+        "Head_and_Shoulders_Bottom": {
+          "win_rate": 0.5781,
+          "direction_override": null,
+          "sim_threshold": null
+        }
+      }
+    },
+    {
+      "timeframe": "15m",
+      "method": "Pivot Window",
+      "patterns": {
+        "Pennant_Bearish": {
+          "win_rate": 0.5546,
+          "direction_override": "Up",
+          "sim_threshold": null
+        }
+      }
+    },
+    {
+      "timeframe": "4h",
+      "method": "ZigZag Limit",
+      "patterns": {
+        "Broadening_Bottom": {
+          "win_rate": 0.5638,
+          "direction_override": "Momentum",
+          "sim_threshold": null
+        }
+      }
+    },
+    {
+      "timeframe": "4h",
+      "method": "Pivot Window",
+      "patterns": {
+        "Wedge_Rising": {
+          "win_rate": 0.6607,
+          "direction_override": null,
+          "sim_threshold": null
+        }
+      }
+    }
+  ],
+  "default_similarity_threshold": 0.85
+}

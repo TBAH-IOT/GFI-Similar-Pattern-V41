@@ -1,0 +1,2 @@
+# Preserve exact bytes across Git checkouts; SHA256SUMS.json covers every file.
+* -text

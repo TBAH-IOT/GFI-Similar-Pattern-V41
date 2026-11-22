@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0e11">
+  <title>GFI Intelligence — Pattern Terminal</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23e8bd57'/%3E%3Cpath d='M22 11h-9l-4 5 4 5h9v-6h-7' fill='none' stroke='%23101317' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reference.css?v=v40-r1">
+  <link rel="stylesheet" href="spotlight.css?v=v41-arrow-only-r1">
+  <script defer src="vendor/lightweight-charts.js"></script>
+    <script defer src="live-feed.js?v=v39-case-sigma-r1"></script>
+    <script defer src="pattern-presentation.js?v=v39-case-sigma-r1"></script>
+    <script defer src="forecast-native.js?v=v40-v39-native-10-floor-r3"></script>
+    <script defer src="forecast-arrows.js?v=v41-accuracy-r12"></script>
+    <script defer src="app.js?v=v41-arrow-only-r1"></script>
+</head>
+<body>
+<svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-10m-6 0h6v6"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v2"/></symbol>
+  <symbol id="i-layer" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8V4Z"/></symbol>
+  <symbol id="i-candle" viewBox="0 0 24 24"><path d="M7 2v4m0 10v6M17 2v8m0 8v4"/><path d="M4 6h6v10H4zm10 4h6v8h-6z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+</defs></svg>
+
+<div class="terminal" id="terminal">
+  <header class="topbar">
+    <a href="#" class="brand" aria-label="GFI Intelligence trang chủ"><span class="brand-mark"><svg><use href="#i-layer"/></svg></span><span>GFI <b>INTELLIGENCE</b></span></a>
+    <nav class="topnav" aria-label="Điều hướng chính">
+      <a href="#" class="active">TRANG CHỦ</a><a href="#context-news">TIN TỨC</a><a href="#chart-panel">TÍN HIỆU</a><button type="button" id="ranking-nav">BẢNG XẾP HẠNG</button><button type="button" id="performance-nav">HIỆU QUẢ LỊCH SỬ</button><button type="button" id="about-nav">NGHIÊN CỨU</button>
+    </nav>
+    <form class="coin-search" id="coin-search" role="search"><input id="coin-query" aria-label="Tìm coin" placeholder="Tìm BTC, NEAR, SOL…" autocomplete="off" aria-controls="search-result"><div id="search-result" hidden aria-label="Kết quả tìm coin"></div></form>
+    <div class="top-actions"><span class="data-badge" id="dataset-note" title="Nguồn giá Binance Spot"><span id="connection-light" class="dot amber"></span> <span id="connection-label">ĐANG KẾT NỐI</span></span></div>
+  </header>
+
+  <div class="contextbar"><span><span class="dot green"></span> CHI TIẾT COIN <span class="crumb">·</span> SCEX PROJECT INTELLIGENCE</span><div class="context-actions"><button id="data-info">Nguồn &amp; phương pháp</button><button id="report-button">Xem báo cáo</button></div></div>
+  <div class="scenario-banner"><strong>BINANCE SPOT</strong><span id="market-range-label"> · BTC/USDT · Đang tải ba tháng dữ liệu đến hiện tại…</span></div>
+
+  <div class="workspace">
+    <aside class="left-rail" aria-label="Tổng quan coin đang xem">
+      <section class="rail-section asset-overview">
+        <h1 id="asset-heading">Bitcoin <span>BTC</span></h1>
+        <div class="reference-price" id="reference-price">—</div>
+        <p class="reference-asof" id="reference-asof">BTC/USDT · Binance Spot · Đang kết nối…</p>
+        <p class="reference-description" id="asset-description">Mạng thanh toán ngang hàng và tài sản số lớn nhất theo vốn hóa, vận hành bởi cộng đồng phát triển mã nguồn mở.</p>
+        <p class="reference-scope">Giá và nến lấy trực tiếp từ Binance Spot, theo thời gian UTC.</p>
+        <p class="reference-description">Đối chiếu nguồn, ngày và bằng chứng riêng của từng mục trước khi dùng.</p>
+      </section>
+    </aside>
+
+    <main class="main-content" id="main-content">
+      <section class="chart-panel" id="chart-panel" aria-label="Biểu đồ giá Bitcoin">
+        <div class="market-header">
+          <div class="market-identity"><span class="bitcoin small" id="asset-glyph">₿</span><div><strong id="asset-pair">BTC<span class="quote"> / USDT</span></strong><span class="market-subtitle" id="asset-subtitle">Bitcoin · Spot</span></div></div>
+          <div class="market-stat primary-stat"><span>GIÁ (USDT)</span><strong id="market-price">—</strong></div>
+          <div class="market-stat"><span>THAY ĐỔI 24H</span><strong id="market-change">—</strong></div>
+          <div class="market-stat volume-stat"><span>KHỐI LƯỢNG 24H</span><strong id="market-volume">—</strong></div>
+        </div>
+        <div class="chart-toolbar">
+          <div class="timeframes" aria-label="Chọn khung nến"><button data-frame="15m">15m</button><button data-frame="1h" class="selected" aria-pressed="true">1h</button><button data-frame="4h">4h</button><button data-frame="1d">1D</button></div>
+          <span class="toolbar-separator"></span>
+          <button class="toolbar-button" id="ema-toggle" aria-label="EMA 20" aria-pressed="true"><svg><use href="#i-trend"/></svg><span>EMA 20</span></button>
+          <button class="pattern-toggle" id="pattern-toggle" aria-pressed="true"><svg><use href="#i-layer"/></svg><span>Similar Pattern</span><span class="switch-mini"></span></button>
+          <div class="toolbar-end"><div class="forecast-layer-toggles" id="forecast-layer-toggles" aria-label="Lớp dự báo"><button type="button" class="forecast-layer-toggle" id="forecast-line-toggle" aria-pressed="true" title="Bật/tắt nét đứt dự báo"><span>LINE</span><span class="switch-mini"></span></button><button type="button" class="forecast-layer-toggle" id="forecast-candle-toggle" aria-pressed="true" title="Bật/tắt nến hollow dự báo"><span>CANDLE</span><span class="switch-mini"></span></button><div class="forecast-scenario-toggles" id="forecast-scenario-toggles" aria-label="Nhánh nến dự báo" hidden><button type="button" class="forecast-layer-toggle forecast-long-toggle" id="forecast-long-toggle" aria-pressed="true" title="Bật/tắt nến dự báo LONG — kịch bản tăng màu xanh"><span>LONG</span><span class="switch-mini"></span></button><button type="button" class="forecast-layer-toggle forecast-short-toggle" id="forecast-short-toggle" aria-pressed="true" title="Bật/tắt nến dự báo SHORT — kịch bản giảm màu đỏ"><span>SHORT</span><span class="switch-mini"></span></button></div></div><button class="icon-button" id="reset-chart" aria-label="Đặt lại vùng xem"><svg><use href="#i-reset"/></svg></button><button class="icon-button" id="expand-chart" aria-label="Mở rộng biểu đồ" aria-pressed="false"><svg><use href="#i-expand"/></svg></button></div>
+        </div>
+        <div class="chart-stage" id="chart-stage">
+          <div class="chart-caption"><span id="chart-title">BTC / USDT · 1h · GFI</span><span class="ohlc" id="ohlc">Kéo để di chuyển · Cuộn để thu phóng</span></div>
+          <div id="forecast-horizon-note" class="forecast-horizon-note" hidden></div>
+          <div class="forecast-label forecast-label-up" id="forecast-up-label" hidden><span><b id="forecast-up-label-prob">—</b></span><strong id="forecast-up-label-target">—</strong></div>
+          <div class="forecast-label forecast-label-down" id="forecast-down-label" hidden><span><b id="forecast-down-label-prob">—</b></span><strong id="forecast-down-label-target">—</strong></div>
+          <div class="forecast-price-tag forecast-price-tag-up" id="forecast-up-price-tag" hidden></div>
+          <div class="forecast-price-tag forecast-price-tag-down" id="forecast-down-price-tag" hidden></div>
+          <div class="forecast-axis-dot forecast-axis-dot-up" id="forecast-up-axis-dot" hidden></div>
+          <div class="forecast-axis-dot forecast-axis-dot-down" id="forecast-down-axis-dot" hidden></div>
+          <div class="forecast-entry-line" id="forecast-entry-line" hidden></div>
+          <div class="forecast-html-overlay" id="forecast-overlay" hidden aria-hidden="true"></div>
+          <div class="forecast-origin-line" id="forecast-origin-line" hidden></div>
+          <div class="forecast-origin-dot" id="forecast-origin-dot" hidden></div>
+          <div class="pattern-explorer pattern-timeline" id="pattern-explorer" hidden>
+            <span class="pattern-explorer-label">PATTERNS · 2M</span>
+            <div class="pattern-navigation" role="group" aria-label="Duyệt pattern theo thời gian">
+              <button class="pattern-step" id="pattern-previous" aria-label="Pattern trước đó" title="Pattern cũ hơn"><svg class="arrow-back"><use href="#i-arrow"/></svg></button>
+              <button class="pattern-current" id="pattern-focus-button" title="Định vị pattern đang chọn"><span id="pattern-current-name"></span><span class="pattern-lifecycle" id="pattern-current-status"></span><time id="pattern-current-time"></time></button>
+              <button class="pattern-step" id="pattern-next" aria-label="Pattern tiếp theo" title="Pattern gần hiện tại hơn"><svg><use href="#i-arrow"/></svg></button>
+            </div>
+            <button class="pattern-latest" id="pattern-latest" title="Đến pattern mới nhất">Mới nhất ↗</button>
+            <button type="button" class="spotlight-focus" id="spotlight-focus" aria-pressed="false" title="Phóng to vùng Entry và TP/SL; không thay đổi giá hay tỷ lệ thắng" hidden>⊕ Phóng to</button>
+          </div>
+          <div class="chart" id="price-chart"></div>
+          <div class="chart-state" id="chart-state"><span class="spinner"></span> Đang quét cấu trúc giá…</div>
+          <div class="chart-watermark" aria-hidden="true">GFI<span>INTELLIGENCE</span></div>
+        </div>
+        <div class="pipeline-status" id="pipeline-status" role="status" data-status="backfilling">Đang chuẩn bị quét hai tháng gần nhất…</div>
+        <div class="chart-bottom"><span id="replay-label"><span class="dot amber"></span> Đang kết nối Binance…</span><div class="chart-range-controls"><button class="range-button" data-range="3m" title="Xem toàn bộ ba tháng đã tải">3M</button><button class="range-button" data-range="1m">1M</button><button class="range-button" data-range="1w" title="Xem 7 ngày gần nhất">7D</button><button id="latest-button" class="text-button">Về hiện tại <span>↗</span></button><span class="utc-label">UTC</span></div><span class="history-loaded-label" id="history-loaded-label">Đang tải lịch sử…</span><span id="visible-range-label" class="visible-range-label" aria-label="Khoảng thời gian đang hiển thị"></span><span id="last-update" class="last-update"></span></div>
+      </section>
+
+    </main>
+
+    <aside class="right-rail" aria-label="Góc nhìn và tín hiệu">
+      <section class="rail-section reference-overview" aria-label="Tổng quan coin đang xem"><div class="rail-eyebrow" id="overview-eyebrow">TỔNG QUAN · BTC</div><h2 id="market-overview-heading">Đang kết nối thị trường BTC/USDT…</h2><div class="overview-card"><span>GIÁ TRỰC TIẾP</span><h3 id="market-overview-price">Binance Spot · BTC/USDT</h3><p id="market-overview-range">Đang tải biên độ 24h…</p></div><div class="overview-card" id="context-news"><span>TIN TỨC · MẪU</span><h3>Nhu cầu tổ chức và dữ liệu vĩ mô đang chú ý</h3><p>Theo dõi phản ứng giá và khối lượng</p></div><div class="overview-card"><span>ON-CHAIN · MẪU</span><h3>Whale nghiêng Long</h3><p>68% Long / 32% Short theo giá trị vị thế đang mở</p></div><div class="overview-card"><span>CỘNG ĐỒNG · MẪU</span><h3>Nghiêng tăng trong thảo luận</h3><p>520 lượt nhắc · điểm +9 · kỳ 27/09–26/10</p></div></section>
+      <div class="notification-anchor" id="notification-anchor"><button class="alert-button" id="alert-button" aria-expanded="false" aria-controls="pattern-notification"><svg><use href="#i-bell"/></svg><span id="alert-button-label">Theo dõi pattern</span><span class="notification-dot" id="notification-dot" hidden></span></button><span class="alert-note" id="pattern-alert-note">Báo khi có pattern mới trong phiên</span>
+        <section class="notification-panel" id="pattern-notification" aria-label="Thông báo pattern gần nhất" hidden><div class="notification-heading"><span><svg><use href="#i-bell"/></svg> <span id="notification-heading-label">PATTERN GẦN NHẤT</span></span><button class="icon-button" id="close-notification" aria-label="Đóng thông báo pattern"><svg><use href="#i-x"/></svg></button></div><div class="notification-empty" id="notification-empty">Chưa có pattern cho khung đang xem.</div><div id="notification-content" hidden><div class="notification-time" id="notification-time"></div><h2 id="notification-name"></h2><div class="notification-direction" id="notification-direction"></div><div class="notification-pattern-status" id="notification-pattern-status"></div><dl class="notification-metrics"><div><dt id="notification-match-label">Độ khớp hình dạng</dt><dd id="notification-similarity">—</dd></div><div class="probability-line up"><dt>Xác suất tăng</dt><dd id="notification-up-probability">—</dd></div><div class="probability-line down"><dt>Xác suất giảm</dt><dd id="notification-down-probability">—</dd></div></dl><p id="notification-evidence-note" class="accuracy-source"></p><p id="notification-accuracy-note" class="accuracy-source">Xác suất tăng/giảm được tính từ các trường hợp lịch sử đã kết thúc.</p><button class="notification-view" id="notification-view">Xem trên biểu đồ <svg><use href="#i-arrow"/></svg></button></div></section>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<dialog id="info-dialog">
+  <div class="dialog-heading"><span class="eyebrow gold">GFI / NGUỒN &amp; PHƯƠNG PHÁP</span><button class="icon-button" id="close-dialog" aria-label="Đóng thông tin"><svg><use href="#i-x"/></svg></button></div>
+  <h2>Nguồn dữ liệu &amp; cách đọc chỉ số</h2>
+  <div class="dialog-body">
+    <p>Chọn BTC, NEAR hoặc SOL ở ô Tìm coin. Giá và nến lấy từ Binance Spot, UTC, WebSocket trực tiếp và REST dự phòng mỗi 5 giây. Dữ liệu, thông báo và bộ quét tách riêng theo coin và khung nến. Pattern search hiện tập trung vào 15m, 1h và 4h; biểu đồ 1D vẫn xem được nhưng phần pattern đang tạm dừng.</p>
+    <h3>Thư viện và kiểm định</h3>
+    <p>BTC 15m/1h/4h giữ nguyên cấu hình đã chốt. Lượt nghiên cứu mới dành cho NEAR/SOL: 78 định nghĩa mô hình giá đều có bộ tìm tự động, gồm đủ 25 template gốc. Khung 1W đã bỏ khỏi pipeline để tập trung dữ liệu vào bốn khung có tính thực dụng hơn. Không chạy mẫu nến Nhật hoặc harmonic. Xem <a href="library.html">thư viện mô hình giá</a> để tra hình dạng, nguồn và quy tắc nhận diện.</p>
+    <p>20% đầu của lịch sử chỉ đo biến động và nhiễu giá để điều chỉnh tham số phụ thuộc coin, rồi khóa lại. Toàn bộ 80% còn lại kiểm định mọi cấu hình áp dụng được; ngưỡng similarity cố định 0,85. Không chọn detector hay similarity bằng accuracy; chỉ có nấc sàn số mẫu riêng từng coin–khung được chọn sau lượt test để phục vụ coverage, nên kết quả này mang tính thăm dò. Cấu hình được lưu trước khi tính kết quả; mốc test không tự dịch khi thêm nến realtime. Lịch sử NEAR từng được xem ở các lượt trước; bằng chứng mới tiếp tục tích luỹ sau lúc kích hoạt.</p>
+    <p>Tiêu chí kích hoạt: tỷ lệ TP trước SL &gt;55%. Pattern search hiện dùng 15m = 100, 1h = 75, 4h = 50; 1D tạm dừng. Nếu riêng coin–khung chưa đủ hai cấu hình đạt chuẩn, ladder 15m/1h/4h chỉ được hạ tới 50/30/20 và được cố định trong registry. Đây là cơ chế coverage thăm dò, không phải bằng chứng độc lập mới. Entry tại giá mở nến tiếp theo; theo dõi tối đa 48 nến của khung đó. Cùng một nến chạm TP và SL hoặc hết hạn đều tính là không thắng. Báo cáo có khoảng tin cậy 95%, chi phí giả định 0,3% mỗi vòng và p-value hiệu chỉnh nhiều phép thử. Đạt ngưỡng lọc chưa đồng nghĩa đã chứng minh có lợi thế hoặc có lãi sau phí.</p>
+    <p>Mỗi bộ nhận diện bắt đầu khi đủ dữ liệu riêng: template gốc theo pivot cần năm điểm đã xác nhận; Close Path cần 21 nến; đường cong xét riêng cửa sổ 24/48/96 nến; island cần ít nhất bốn nến và gap thật. Giữ mọi tín hiệu chồng lấn và theo dõi kết quả riêng; cùng một tín hiệu tải lại chỉ đếm một lần. Hết hạn nằm trong N và tính không thắng. Các mẫu có thể phụ thuộc nhau; Wilson/p-value là giá trị danh nghĩa, chưa điều chỉnh tương quan do chồng lấn.</p>
+    <p id="research-summary">Đang tải trạng thái nghiên cứu…</p>
+    <h3>Độ khớp và xác suất</h3>
+    <p>NEAR/SOL dùng tỷ lệ TP trước SL từ mốc kiểm định đã cố định để sàng lọc cấu hình. Độ khớp hình dạng là chỉ số khác. BTC 15m/1h/4h dùng cấu hình lịch sử đã chốt, không tính lại theo coin khác; không dùng similarity làm xác suất thắng. Pattern search 1D hiện tạm dừng.</p>
+    <p>Inverse được kiểm định bằng lệnh ngược chiều thực tế, với cùng TP/SL đối xứng. Không lấy 100% trừ accuracy: hết hạn hoặc cùng nến chạm cả hai mức có thể khiến cả hai chiều đều không thắng. Inverse vẫn phải đạt &gt;55% và đủ số mẫu tối thiểu của từng khung.</p>
+    <h3>Luồng realtime</h3>
+    <p>Bộ quét nền kiểm tra nguồn mỗi 3 giây, chỉ xét nến đóng, tải bù khi gián đoạn và ghi nhật ký riêng. Với NEAR/SOL, mọi cấu hình tiếp tục được quan sát từ mốc kiểm định. Cấu hình đạt chuẩn được hiển thị như tín hiệu; mẫu có độ tương đồng hình dạng &gt;90% nhưng chưa đạt accuracy/sample vẫn hiện dưới nhãn “Tham khảo”, không phát tín hiệu giao dịch. Accuracy xuống dưới 55% sẽ bị tắt. Server cần chạy để cập nhật liên tục.</p>
+    <p>Chart lịch sử hai tháng được dựng lại với model hiện hành; không phải mọi pattern lúc đó đều đã là tín hiệu có thể giao dịch. Chấm trắng và đường ngang đánh dấu Entry; các nhãn giá TP/SL là mức tham chiếu R:R 1:1. V41 chỉ vẽ hai mũi tên PATH từ đường lịch sử đại diện, không hiển thị nến dự báo mờ. Độ đậm hướng chính theo accuracy cấu hình, tách biệt độ khớp hình dạng và xác suất tăng/giảm. Bản V34 cũ có nến rỗng và nét đứt, chỉ dùng khi mở phiên bản đó. Các thẻ tin tức/on-chain/cộng đồng là dữ liệu mẫu để xem bố cục.</p>
+  </div>
+</dialog>
+<dialog id="demo-signal-dialog" aria-labelledby="demo-signal-title"><div class="dialog-heading"><span class="eyebrow gold">TÍN HIỆU MINH HỌA</span><button class="icon-button" id="close-demo-signal" aria-label="Đóng chi tiết tín hiệu mẫu"><svg><use href="#i-x"/></svg></button></div><h2 id="demo-signal-title"></h2><p class="demo-signal-time" id="demo-signal-time"></p><dl class="demo-signal-details" id="demo-signal-details"></dl><p class="demo-signal-note">Dữ liệu mẫu để xem cách hiển thị đa coin và đa loại tín hiệu. Chưa kết nối nguồn Whales copy, Quant hoặc Macro cho các dòng này.</p></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

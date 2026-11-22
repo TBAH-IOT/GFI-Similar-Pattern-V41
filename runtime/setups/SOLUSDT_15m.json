@@ -1,0 +1,1871 @@
+{
+  "symbol": "SOLUSDT",
+  "timeframe": "15m",
+  "calibration": {
+    "method": "OHLC volatility/noise scaling only; no trade labels or accuracy search",
+    "formula_version": "tr-noise-v1",
+    "noise_to_movement_ratio": 2.3181916782126657,
+    "median_true_range_pct": 0.010191647280381098,
+    "zigzag_reversal_pct": 0.020383294560762197,
+    "pivot_radius": 5,
+    "ema_span": 6,
+    "ema_peak_radius": 3,
+    "bars": 43593,
+    "from_time": 1597125600,
+    "to_time": 1636438500
+  },
+  "test_from": 1636439400,
+  "configurations": [
+    {
+      "name": "Head_and_Shoulders_Top",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Top",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Top",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Top",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Symmetrical",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Symmetrical",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Symmetrical",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Symmetrical",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Ascending",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Ascending",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Ascending",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Ascending",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Descending",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Descending",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Descending",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triangle_Descending",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Rising",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Rising",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Rising",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Rising",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Falling",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Falling",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Falling",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wedge_Falling",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bullish",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bullish",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bullish",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bullish",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bearish",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bearish",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bearish",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Flag_Bearish",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bullish",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bullish",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bullish",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bullish",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bearish",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bearish",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bearish",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Pennant_Bearish",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rectangle_Range",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rectangle_Range",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rectangle_Range",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rectangle_Range",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Bottom",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Bottom",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Bottom",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Bottom",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Top",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Top",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Top",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rounding_Top",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Cup_and_Handle",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Cup_and_Handle",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Cup_and_Handle",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Cup_and_Handle",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Top",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Top",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Top",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Top",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Bottom",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Bottom",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Bottom",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Diamond_Bottom",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Top",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Top",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Top",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Top",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Bottom",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Bottom",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Bottom",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Bottom",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom_Wide",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom_Wide",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom_Wide",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Bottom_Wide",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top_Wide",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top_Wide",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top_Wide",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Triple_Top_Wide",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom_Adam_Adam",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top_Adam_Adam",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom_Adam_Eve",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top_Adam_Eve",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom_Eve_Adam",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top_Eve_Adam",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Bottom_Eve_Eve",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Double_Top_Eve_Eve",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Complex_Head_and_Shoulders_Top",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Complex_Head_and_Shoulders_Bottom",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Inverted_Cup_and_Handle",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Wedge_Ascending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Wedge_Descending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Right_Angled_Ascending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Broadening_Right_Angled_Descending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Channel_Ascending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Channel_Descending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rectangle_Top",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Rectangle_Bottom",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "High_and_Tight_Flag",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Measured_Move_Up",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Measured_Move_Down",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Bump_and_Run_Top",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Bump_and_Run_Bottom",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Scallop_Ascending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Scallop_Descending",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Scallop_Ascending_Inverted",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Scallop_Descending_Inverted",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Three_Falling_Peaks",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Three_Rising_Valleys",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "V_Bottom",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "V_Top",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "V_Bottom_Extended",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "V_Top_Extended",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Big_M",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Big_W",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Island_Reversal_Top",
+      "method": "Actual Gap Island",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Island_Reversal_Bottom",
+      "method": "Actual Gap Island",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Roof",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Roof",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Roof",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Roof_Inverted",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Roof_Inverted",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Roof_Inverted",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wolfe_Wave_Bullish",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wolfe_Wave_Bullish",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wolfe_Wave_Bullish",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wolfe_Wave_Bearish",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wolfe_Wave_Bearish",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Wolfe_Wave_Bearish",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Gap_Breakaway",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Gap_Runaway",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Gap_Exhaustion",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Gap_Common",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "direct"
+    },
+    {
+      "name": "Head_and_Shoulders_Top__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Top__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Top__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Top__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Head_and_Shoulders_Bottom__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Symmetrical__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Symmetrical__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Symmetrical__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Symmetrical__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Ascending__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Ascending__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Ascending__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Ascending__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Descending__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Descending__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Descending__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triangle_Descending__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Rising__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Rising__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Rising__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Rising__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Falling__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Falling__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Falling__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wedge_Falling__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bullish__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bullish__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bullish__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bullish__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bearish__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bearish__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bearish__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Flag_Bearish__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bullish__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bullish__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bullish__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bullish__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bearish__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bearish__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bearish__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Pennant_Bearish__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rectangle_Range__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rectangle_Range__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rectangle_Range__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rectangle_Range__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Bottom__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Bottom__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Bottom__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Bottom__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Top__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Top__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Top__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rounding_Top__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Cup_and_Handle__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Cup_and_Handle__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Cup_and_Handle__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Cup_and_Handle__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Top__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Top__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Top__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Top__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Bottom__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Bottom__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Bottom__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Diamond_Bottom__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Top__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Top__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Top__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Top__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Bottom__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Bottom__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Bottom__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Bottom__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom_Wide__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom_Wide__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom_Wide__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Bottom_Wide__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top_Wide__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top_Wide__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top_Wide__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Triple_Top_Wide__Inverse",
+      "method": "Close Path 20/4",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom_Adam_Adam__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top_Adam_Adam__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom_Adam_Eve__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top_Adam_Eve__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom_Eve_Adam__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top_Eve_Adam__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Bottom_Eve_Eve__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Double_Top_Eve_Eve__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Complex_Head_and_Shoulders_Top__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Complex_Head_and_Shoulders_Bottom__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Inverted_Cup_and_Handle__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Wedge_Ascending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Wedge_Descending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Right_Angled_Ascending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Broadening_Right_Angled_Descending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Channel_Ascending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Channel_Descending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rectangle_Top__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Rectangle_Bottom__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "High_and_Tight_Flag__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Measured_Move_Up__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Measured_Move_Down__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Bump_and_Run_Top__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Bump_and_Run_Bottom__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Scallop_Ascending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Scallop_Descending__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Scallop_Ascending_Inverted__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Scallop_Descending_Inverted__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Three_Falling_Peaks__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Three_Rising_Valleys__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "V_Bottom__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "V_Top__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "V_Bottom_Extended__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "V_Top_Extended__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Big_M__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Big_W__Inverse",
+      "method": "Curve Similarity 24/48/96",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Island_Reversal_Top__Inverse",
+      "method": "Actual Gap Island",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Island_Reversal_Bottom__Inverse",
+      "method": "Actual Gap Island",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Roof__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Roof__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Roof__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Roof_Inverted__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Roof_Inverted__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Roof_Inverted__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wolfe_Wave_Bullish__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wolfe_Wave_Bullish__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wolfe_Wave_Bullish__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wolfe_Wave_Bearish__Inverse",
+      "method": "Pivot Window Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wolfe_Wave_Bearish__Inverse",
+      "method": "EMA Peaks Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Wolfe_Wave_Bearish__Inverse",
+      "method": "ZigZag Calibrated",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Gap_Breakaway__Inverse",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Gap_Runaway__Inverse",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Gap_Exhaustion__Inverse",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "inverse"
+    },
+    {
+      "name": "Gap_Common__Inverse",
+      "method": "Causal Gap Classification",
+      "threshold": 0.85,
+      "variant": "inverse"
+    }
+  ],
+  "configuration_hash": "f6ac333a2bed38a0c9e4de7e5a60f47519dbe23f5b2e8c19b7e2e6475ad1d406",
+  "prepared_at": 1793418678513,
+  "contains_trade_outcomes": false
+}

@@ -1,0 +1,48 @@
+{
+  "build": "GFI-Similar-Pattern-V41-GitHub-2026-11-22",
+  "prepared_date": "2026-11-22",
+  "base": "GFI-Similar-Pattern-V2 canonical model package",
+  "ui": "V41 arrow-only PATH presentation",
+  "model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+  "snapshot": {
+    "mode": "offline",
+    "prepared_date": "2026-11-04",
+    "markets": {
+      "BTCUSDT:15m": 58,
+      "BTCUSDT:1h": 14,
+      "BTCUSDT:4h": 3,
+      "NEARUSDT:15m": 45,
+      "NEARUSDT:1h": 37,
+      "NEARUSDT:4h": 21,
+      "SOLUSDT:15m": 50,
+      "SOLUSDT:1h": 34,
+      "SOLUSDT:4h": 17
+    },
+    "patterns": 279,
+    "daily_price_only": true
+  },
+  "checks_passed": [
+    "python tools/preflight.py: 129 required paths, 12 snapshots, 12 histories, 9 path libraries, zero missing",
+    "python tools/preflight.py --runtime: 12 modules loaded, 6 NEAR/SOL registry markets loaded",
+    "python tools/verify_bundle.py: every packaged file matched SHA256SUMS.json",
+    "python tests/test_canonical_model.py: one-ULP environment probes and tamper guards",
+    "python tools/model_identity.py --check-registry: BTC baseline and six NEAR/SOL markets",
+    "python tests/test_handoff.py: source files, snapshots, portable path cache, Entry identity",
+    "python tests/test_occurrence_identity.py: duplicate Entry regression",
+    "python tests/verify_source_paths.py: 558 historical paths and 5580 OHLC rows",
+    "python tools/test_occurrence_v40.py: causal, locked per-occurrence N with 10-bar floor",
+    "python tests/test_v41_contract.py: live API requests source paths for V41; exchange mocked",
+    "node tools/test_arrow_forecast.cjs: arrow path regression",
+    "node tests/test_pattern_presentation.cjs",
+    "node tests/test_forecast_native.cjs",
+    "node tests/test_live_feed.cjs",
+    "node tests/test_adapter.cjs",
+    "offline snapshot HTTP smoke: all 9 BTC/NEAR/SOL x 15m/1h/4h and 1d price-only",
+    "browser visual QA: V41 loaded BTC, NEAR and SOL at 1h; PATH button only"
+  ],
+  "not_tested_here": [
+    "Production reverse proxy/auth/TLS and company web integration",
+    "Full Binance realtime stream end-to-end on the target infrastructure",
+    "Docker build/run and multi-user load"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "assets": {
+    "BTCUSDT": {"ticker":"BTC","name":"Bitcoin","glyph":"₿","description":"Mạng thanh toán ngang hàng và tài sản số lớn nhất theo vốn hóa, vận hành bởi cộng đồng phát triển mã nguồn mở."},
+    "NEARUSDT": {"ticker":"NEAR","name":"NEAR Protocol","glyph":"N","description":"NEAR Protocol · Nền tảng blockchain dùng cơ chế proof of stake. Giá và pattern được tính từ thị trường NEAR/USDT trên Binance Spot."},
+    "SOLUSDT": {"ticker":"SOL","name":"Solana","glyph":"◎","description":"Solana · Giá và pattern được tính riêng từ SOL/USDT trên Binance Spot."}
+  },
+  "similar_assets": {"BTCUSDT":[],"NEARUSDT":["SOLUSDT"],"SOLUSDT":["NEARUSDT"]}
+}

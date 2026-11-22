@@ -1,0 +1,128 @@
+[
+  {
+    "id": "BTCUSDT-1h-e670112f7a02dd51db3de625",
+    "symbol": "BTCUSDT",
+    "ticker": "BTC",
+    "tf": "1h",
+    "name": "Broadening_Bottom",
+    "method": "Pivot Window",
+    "direction": "LONG",
+    "similarity": 89.36371603402398,
+    "detected_at": 1791352800,
+    "available_at": 1791356400,
+    "entry": 84229.67,
+    "tp": 87351.66,
+    "sl": 81107.68,
+    "points": [
+      {
+        "time": 1791216000,
+        "value": 84972.01
+      },
+      {
+        "time": 1791248400,
+        "value": 86130.45
+      },
+      {
+        "time": 1791266400,
+        "value": 85136.11
+      },
+      {
+        "time": 1791298800,
+        "value": 86698.99
+      },
+      {
+        "time": 1791338400,
+        "value": 83577.0
+      }
+    ],
+    "configured_win_rate": 0.5554,
+    "calibrated": false,
+    "threshold": 0.85,
+    "calibration_symbol": "BTCUSDT",
+    "model_profile": "upstream_btc"
+  },
+  {
+    "id": "BTCUSDT-1h-baeba16879dc1410c86552c2",
+    "symbol": "BTCUSDT",
+    "ticker": "BTC",
+    "tf": "1h",
+    "name": "Broadening_Bottom",
+    "method": "Pivot Window",
+    "direction": "SHORT",
+    "similarity": 89.36371603402398,
+    "detected_at": 1791374400,
+    "available_at": 1791378000,
+    "entry": 83491.97,
+    "tp": 80369.98,
+    "sl": 86613.96,
+    "points": [
+      {
+        "time": 1791216000,
+        "value": 84972.01
+      },
+      {
+        "time": 1791248400,
+        "value": 86130.45
+      },
+      {
+        "time": 1791266400,
+        "value": 85136.11
+      },
+      {
+        "time": 1791298800,
+        "value": 86698.99
+      },
+      {
+        "time": 1791338400,
+        "value": 83577.0
+      }
+    ],
+    "configured_win_rate": 0.5554,
+    "calibrated": false,
+    "threshold": 0.85,
+    "calibration_symbol": "BTCUSDT",
+    "model_profile": "upstream_btc"
+  },
+  {
+    "id": "BTCUSDT-1h-fd8350990a7b5689022f6b20",
+    "symbol": "BTCUSDT",
+    "ticker": "BTC",
+    "tf": "1h",
+    "name": "Broadening_Bottom",
+    "method": "Pivot Window",
+    "direction": "LONG",
+    "similarity": 85.36049930595846,
+    "detected_at": 1791392400,
+    "available_at": 1791396000,
+    "entry": 83158.99,
+    "tp": 87070.73000000001,
+    "sl": 79247.25,
+    "points": [
+      {
+        "time": 1791216000,
+        "value": 84972.01
+      },
+      {
+        "time": 1791248400,
+        "value": 86130.45
+      },
+      {
+        "time": 1791266400,
+        "value": 85136.11
+      },
+      {
+        "time": 1791298800,
+        "value": 86698.99
+      },
+      {
+        "time": 1791378000,
+        "value": 82787.25
+      }
+    ],
+    "configured_win_rate": 0.5554,
+    "calibrated": false,
+    "threshold": 0.85,
+    "calibration_symbol": "BTCUSDT",
+    "model_profile": "upstream_btc"
+  }
+]

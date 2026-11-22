@@ -1,0 +1,76 @@
+{
+  "definitions": 78,
+  "searchable_definitions": 78,
+  "reference_only_definitions": 0,
+  "strategies": 156,
+  "families": {
+    "chart": 78
+  },
+  "groups": {
+    "multiple_tops_bottoms": 16,
+    "head_shoulders": 4,
+    "triangles": 3,
+    "wedges_channels": 4,
+    "flags_ranges": 8,
+    "broadening_diamonds": 8,
+    "curves_cups": 8,
+    "trend_structures": 10,
+    "gaps_islands": 6,
+    "specialised": 11
+  },
+  "btc_baseline_covered": true,
+  "btc_unique_pattern_names": [
+    "Broadening_Bottom",
+    "Cup_and_Handle",
+    "Diamond_Top",
+    "Double_Bottom",
+    "Head_and_Shoulders_Bottom",
+    "Head_and_Shoulders_Top",
+    "Pennant_Bearish",
+    "Triangle_Ascending",
+    "Triple_Bottom_Wide",
+    "Triple_Top",
+    "Triple_Top_Wide",
+    "Wedge_Falling",
+    "Wedge_Rising"
+  ],
+  "btc_profiles": 7,
+  "btc_source_sha256": "9027f8432625232d3f7aaa6443bfba0f5da2a9b11c55011082d40b4ff37b03c8",
+  "btc_parameters": "BTC 15m/1h/4h frozen; current research is NEAR and SOL independently.",
+  "chart_rules": {
+    "catalogue": "Price charts only",
+    "minimum_template_points": 4,
+    "under_minimum_template_points": [],
+    "extra_pivot_or_visual_filters": false,
+    "curve_windows": [
+      24,
+      48,
+      96
+    ],
+    "curve_samples": 32,
+    "curve_stride": 4,
+    "curve_score": "1 - normalized RMSE; minimum correlation 0.80",
+    "actual_gap_island_bars": [
+      2,
+      10
+    ]
+  },
+  "excluded_by_policy": [
+    "TA-Lib / Japanese candlestick patterns",
+    "Fibonacci harmonic patterns",
+    "Elliott and Wyckoff complete systems",
+    "Indicators and order flow"
+  ],
+  "limitations": [
+    "Finite sourced taxonomy, not every named trading setup.",
+    "Similarity prototypes do not implement all textbook confirmation, volume and duration rules.",
+    "All 78 have automatic detectors; specialised rules are published numerical conventions, not every discretionary/private textbook rule.",
+    "Wide and Adam/Eve are subtypes; aliases and direct/inverse are not extra pattern families."
+  ],
+  "sources": [
+    "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns",
+    "https://www.thepatternsite.com/mybooks.html",
+    "https://catalogimages.wiley.com/images/db/pdf/9781119739685.toc.pdf"
+  ],
+  "exhaustive": false
+}

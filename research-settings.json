@@ -1,0 +1,27 @@
+{
+  "symbols": ["NEARUSDT", "SOLUSDT"],
+  "research_timeframes_by_symbol": {"NEARUSDT": ["4h","1h","15m"], "SOLUSDT": ["4h","1h","15m"]},
+  "sample_policy_mode": "fixed",
+  "split_policy_id": "chronological-calibration20-test80-v1",
+  "split_overrides": {},
+  "configuration_fraction": 0.2,
+  "holdout_fraction": 0.8,
+  "fixed_similarity_threshold": 0.85,
+  "accuracy_anchor": "holdout_start",
+  "activation_min_samples_by_timeframe": {
+    "15m": 100,
+    "1h": 75,
+    "4h": 50,
+    "1d": 30
+  },
+  "coverage_target_per_market": 2,
+  "sample_ladder_by_timeframe": {
+    "15m": [100, 75, 50],
+    "1h": [75, 50, 30],
+    "4h": [50, 30, 20],
+    "1d": [30, 20, 15]
+  },
+  "activation_win_rate_gt": 0.55,
+  "deactivate_win_rate_lt": 0.55,
+  "btc_baseline_frozen": true
+}

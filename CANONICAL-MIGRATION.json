@@ -1,0 +1,111 @@
+{
+  "schema": "r59-to-r59.1-canonical-identity-migration-v1",
+  "old_model_hash": "58562e6c8968869371c01bbc95c2c509ddad922f3fdc9a48efd18f5c156d5798",
+  "new_model_hash": "48e858ca31f558bc68c9849894f281affa04db77f7f1ff07d6b0803291c1f6a8",
+  "catalog_hash_unchanged": "6e4ca4e90505a8e44f6ec7a4b4699f242a636189a6b7a905ae5ce79e58636ef2",
+  "strategy_hash_unchanged": "12dd27d7a52086aab106d59cae97e2bf792dca2f40b29935bed746e794148927",
+  "evaluation_hash_unchanged": "aa8affd6b85c9063fd4ac4032aa15e9aa7cb84f3ee7725bd0d6d7a45cae8cdf2",
+  "btc_source_sha256_unchanged": "9027f8432625232d3f7aaa6443bfba0f5da2a9b11c55011082d40b4ff37b03c8",
+  "prototype_count": 78,
+  "matrices_bit_exact": {
+    "GRID": "a0a9c133d907a7f8a52ff83ccc71ec89803f121b70fe6312aa14eb1d363744b5",
+    "TEMPLATES": "188500523914b31de492376763d59961d56371b97968830d909aa2ea92c18c93",
+    "CENTERED": "c17fb82ecafeb3786242747709397b16786cdd6fa0111c7cdff285cbaf9383c9",
+    "NORMS": "3d6681f706df37dfc1a9fee1b2346d85a355648aded1289a4cb44b2785e336ea",
+    "LEGACY_TEMPLATES": "9ca052c75cdaf9f8f0b85e73ab8cf9f78bcfc5849da98be3570d8811c69a749b"
+  },
+  "changed_artifacts": [
+    {
+      "file": "research-results.json",
+      "nonidentity_payload_sha256": "3c351566461b4ab77d6ac5ca988c87656162025bf6e3bfdbbe49f57d2704dd2d",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/research-registry.json",
+      "nonidentity_payload_sha256": "3c351566461b4ab77d6ac5ca988c87656162025bf6e3bfdbbe49f57d2704dd2d",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/manifest.json",
+      "nonidentity_payload_sha256": "1d45671b989cf567eac3f01cc1dda06f1474e5c72cd9c0cee9ba522cf47aab12",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/BTCUSDT_15m-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "32536a3cc06ca3d37042b93853262f006f17ba5fee7ba8abee107631507c8e2e",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/BTCUSDT_1h-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "ea582d0700369bad1de3f9cc87f93e25983b78f7f5a022f2108f852e612e66a8",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/BTCUSDT_4h-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "17b38867aeeaa5078e0ba5f6f50efcf6b1cad284ec78d75b323cdf8fc394c23b",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/NEARUSDT_15m-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "47d82c57977538db9422af9b83c4853cfc88b5d5349293b64d4c8de53ad0228c",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/NEARUSDT_1h-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "f59a1e9f1b27a6e34413e83b124ad340fd371cedc339536632b545fe9a82df95",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/NEARUSDT_4h-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "ebe1156f17ed09e1aec7142d9dca047c189d142f03dc2feff66157475dc6c2be",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/SOLUSDT_15m-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "824625e384c1bf37f4af742793ef5bd7765999d7305e17c124e16ab347ab3693",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/SOLUSDT_1h-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "efcce32d8824d4ba34d4c4243b18074e8580df1dd0a2b74a46bf1ea1603cfbe5",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "runtime/SOLUSDT_4h-forecast-paths.json.gz",
+      "nonidentity_payload_sha256": "73c47a25482c1000437fccdbc1d9a49c4d139f485ba909117eb1ecc1e152505c",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/NEARUSDT_15m.json.gz",
+      "nonidentity_payload_sha256": "5f004b09100a7d05b1b98886506049ff1743832a44b800f806eb1b0241274b36",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/NEARUSDT_1h.json.gz",
+      "nonidentity_payload_sha256": "a056705a3a20a7d0147f0abc1552d9c639b04546e7be62af8bd07b5dce17ad64",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/NEARUSDT_4h.json.gz",
+      "nonidentity_payload_sha256": "2603e0b989c361eb9fe91cb5aa3315fb66f9b4e8d37c929f9f347b0b6b188592",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/SOLUSDT_15m.json.gz",
+      "nonidentity_payload_sha256": "4a0c78694a7803086143d8b3b8ca235d5c7c19aba388910f692d3fbcf2276c40",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/SOLUSDT_1h.json.gz",
+      "nonidentity_payload_sha256": "18b63c3bd68be39a7effafd1ae5826fa3300d6b95a9df927138fc09034d8b8ea",
+      "nonidentity_payload_unchanged": true
+    },
+    {
+      "file": "demo-data/SOLUSDT_4h.json.gz",
+      "nonidentity_payload_sha256": "da8f041aeaab8828dce79543bee265f9a4f1570929b68df4bfcd13300db3af06",
+      "nonidentity_payload_unchanged": true
+    }
+  ],
+  "trade_statistics_recomputed": false,
+  "trade_statistics_and_nonidentity_data_unchanged": true
+}
