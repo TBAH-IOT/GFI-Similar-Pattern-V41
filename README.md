@@ -1,4 +1,4 @@
-# GFI Similar Pattern V41 — bàn giao tích hợp
+# GFI-Similar-Pattern — bàn giao tích hợp
 
 Source, model, dữ liệu đã quét và giao diện tham chiếu để tích hợp Similar Pattern vào web tổng. **V41 mặc định chỉ vẽ hai mũi tên kịch bản tăng/giảm** trên biểu đồ nến thật; không hiển thị nến dự báo mờ hay nút CANDLE. Độ đậm của hướng chính tăng liên tục theo accuracy của cấu hình. Bản này ghép từ gói V2 đã chuẩn hóa hash model và source giao diện V41 local.
 

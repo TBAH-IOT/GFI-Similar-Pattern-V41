@@ -1,4 +1,4 @@
-# Bắt đầu với gói GFI Similar Pattern V41
+# Bắt đầu với gói GFI-Similar-Pattern
 
 1. Giải nén **toàn bộ** ZIP. Mở terminal trong thư mục có `README.md`, `server.py`, `SHA256SUMS.json`.
 2. Chạy `python tools/preflight.py` rồi `python tools/verify_bundle.py`. Mọi file thiếu/sai hash sẽ được báo ngay.

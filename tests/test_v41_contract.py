@@ -40,3 +40,14 @@ with patch.object(server, "_base_live_signals", return_value=[signal]), \
     extend.assert_called_once()
 
 print("PASS: V41 live API requests both source paths and extends one ready occurrence")
+
+# The live caller omits the optional display target when choosing real paths.
+from forecast_selection import representative_path
+
+for side in ("up", "down"):
+    price = 1.02 if side == "up" else 0.98
+    rows = [dict(open=1.0, high=1.05, low=.95, close=price, time=i) for i in range(10)]
+    sample = (0.0, -100, side == "up", rows, "BTCUSDT")
+    selected = representative_path([sample], len(rows), side, "BTCUSDT")
+    assert selected["source_time"] == 100 and selected["rendered_turns"] == 0
+    assert [bar["close"] for bar in selected["candles"]] == [price] * len(rows)

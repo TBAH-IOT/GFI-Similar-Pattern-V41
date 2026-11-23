@@ -15,11 +15,13 @@ Web tổng HTTPS + auth
 
 ## Cách nhanh nhất: nhúng V41
 
+Khi chạy cùng Signal (cổng 8765), chạy `python server.py --port 8767` hoặc đặt `GFI_PATTERN_PORT=8767` cho Docker Compose. Mẫu proxy bên dưới dùng cổng 8767.
+
 Đặt `integration/nginx-location.conf` dưới HTTPS/auth của web tổng, trỏ về service Python. Đặt service sau proxy cùng origin để asset/API hoạt động.
 
 ```html
 <iframe
-  title="GFI Similar Pattern"
+  title="GFI-Similar-Pattern"
   src="/similar-pattern/?v=41&embed=1&symbol=BTCUSDT&tf=1h"
   style="width:100%;height:900px;border:0"
 ></iframe>

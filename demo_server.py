@@ -38,13 +38,24 @@ class Handler(SimpleHTTPRequestHandler):
         route=urlparse(self.path)
         if route.path=='/':
             query = route.query or 'v=41&build=github-v41'
-            self.send_response(302);self.send_header('Location',f'/index.html?{query}#chart-panel');self.end_headers();return
+            self.send_response(302);self.send_header('Location',f'index.html?{query}#chart-panel');self.end_headers();return
         if not route.path.startswith('/api/'): return super().do_GET()
         try:
             catalog=json.loads((ROOT/'assets.json').read_text(encoding='utf-8'))
             if route.path=='/api/assets': result={**catalog,'pattern_timeframes':['15m','1h','4h'],'timeframes':['15m','1h','4h','1d']}
             elif route.path=='/api/health': result={'ok':True,'mode':'snapshot','manifest':json.loads((ROOT/'demo-data/manifest.json').read_text(encoding='utf-8'))}
             elif route.path=='/api/research': result={'progress':{'status':'complete'},'report':json.loads((ROOT/'research-results.json').read_text(encoding='utf-8'))}
+            elif route.path == '/api/btc-baseline':
+                result = json.loads((ROOT/'btc-baseline.json').read_text(encoding='utf-8'))
+            elif route.path == '/api/research.csv':
+                body = (ROOT/'research-results.csv').read_bytes()
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/csv; charset=utf-8')
+                self.send_header('Content-Disposition', 'attachment; filename="gfi-near-sol-price-patterns.csv"')
+                self.send_header('Content-Length', str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+                return
             elif route.path=='/api/catalog': result=json.loads((ROOT/'pattern-catalog.json').read_text(encoding='utf-8'))
             else:
                 params=parse_qs(route.query);symbol=params.get('symbol',['BTCUSDT'])[0].upper();tf=params.get('tf',['1h'])[0]

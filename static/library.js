@@ -20,7 +20,7 @@ function render(){
  }).join('')||'<p class="empty">Không có mô hình phù hợp. Thử một tên hoặc nhóm khác.</p>';
 }
 async function init(){try{
- const response=await fetch('/api/catalog');if(!response.ok)throw Error('Không tải được thư viện');const data=await response.json();patterns=data.patterns;
+ const response=await fetch('api/catalog');if(!response.ok)throw Error('Không tải được thư viện');const data=await response.json();patterns=data.patterns;
  const groups=new Map(patterns.map(p=>[p.group,p.group_label]));
  $('total').textContent=patterns.length;$('groups-total').textContent=groups.size;$('searchable').textContent=patterns.filter(p=>p.status==='searchable').length;$('reference').textContent=patterns.filter(p=>['weekly_context','roof_geometry','wolfe_geometry','gap_classification'].includes(p.recognition)).length;
  $('categories').innerHTML=[['','Tất cả'],...groups].map(([key,label])=>'<button type="button" data-group="'+esc(key)+'" aria-pressed="false">'+esc(label)+'</button>').join('');

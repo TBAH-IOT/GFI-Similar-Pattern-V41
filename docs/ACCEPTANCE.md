@@ -1,4 +1,4 @@
-# Nghiệm thu GFI Similar Pattern V41
+# Nghiệm thu GFI-Similar-Pattern
 
 ## Gói bàn giao
 

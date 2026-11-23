@@ -13,7 +13,7 @@ function rowsFor(symbol,tf){
  });
 }
 async function refresh(){try{
- const results=await Promise.all([fetch('/api/research').then(r=>r.json()),fetch('/api/catalog').then(r=>r.json()),fetch('/api/btc-baseline').then(r=>r.json())]);
+ const results=await Promise.all([fetch('api/research').then(r=>r.json()),fetch('api/catalog').then(r=>r.json()),fetch('api/btc-baseline').then(r=>r.json())]);
  [snapshot,catalog]=results;
  $('definition-count').textContent=catalog.patterns.length;
  $('strategy-count').textContent=catalog.strategies.length;

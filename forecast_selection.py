@@ -39,7 +39,7 @@ def _rendered_turns(values, side, target):
     narrow question: after the real source sequence is aligned to its branch
     target, does it still contain visible reversals before first touch?
     """
-    if not np.isfinite(target) or target <= 0:
+    if target is None or not np.isfinite(target) or target <= 0:
         return 0
     closes = np.r_[1.0, values[:, 3]]
     raw_end_delta = closes[-1] - 1.0

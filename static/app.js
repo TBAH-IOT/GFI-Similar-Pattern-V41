@@ -1180,7 +1180,7 @@
     if (nativeV40Mode) document.title='GFI Intelligence — V40 Pattern Path · 10 candles';
     if (meanForecastMode) document.title='GFI Intelligence — V40 Mean Candle Forecast';
     if (zigzagForecastMode) {
-      document.title = spotlightForecastMode ? 'GFI Intelligence — V41 Scenario Spotlight' : guidedForecastMode
+      document.title = spotlightForecastMode ? 'GFI-Similar-Pattern' : guidedForecastMode
         ? 'GFI Intelligence — Guided Pattern Path'
         : 'GFI Intelligence — V40 Pattern Path · 10 candles';
       $("forecast-line-toggle").firstChild.textContent = guidedForecastMode || spotlightForecastMode ? 'PATH ' : 'TP/SL ';
